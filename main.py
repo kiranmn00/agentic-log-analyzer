@@ -1,8 +1,15 @@
-from analyzer import analyze_log
+from analyzer import analyze_log, generate_report
 
-with open("sample_logs/sync_error.txt") as f:
-    log = f.read()
+with open("sample_logs/sync_error.txt", "r") as file:
 
-result = analyze_log(log)
+    log_text = file.read()
 
-print(result)
+analysis = analyze_log(log_text)
+
+report = generate_report(analysis)
+
+print(report)
+
+with open("output/sample_analysis.txt", "w") as file:
+
+    file.write(report)
