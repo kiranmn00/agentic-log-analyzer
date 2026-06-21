@@ -1,0 +1,10 @@
+Device went out of sync.
+
+Controller:
+Controller0/0/0/1
+
+Error:
+Controller not found.
+
+Timestamp:
+2026-06-20
