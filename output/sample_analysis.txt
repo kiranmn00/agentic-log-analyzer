@@ -1,0 +1,11 @@
+Issue:
+Synchronization Failure
+
+Root Cause:
+Controller missing from inventory.
+
+Severity:
+Medium
+
+Recommended Action:
+Verify controller existence on device.
