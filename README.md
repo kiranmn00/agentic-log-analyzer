@@ -1,19 +1,43 @@
-# agentic-log-analyzer
-Input: A log file, sync error, alarm output, or API error  Output: - Summary - Possible Root Cause - Severity - Recommended Actions
-
 # Agentic Log Analyzer
 
-AI-assisted log analysis tool for network alarms,
-sync failures and operational events.
+AI-powered log analysis framework for identifying network synchronization issues, alarms, and operational failures.
 
-Features:
+## Features
+
 - Log parsing
 - Root cause identification
 - Severity classification
 - Recommended actions
-- Verification workflow
+- Verification-based analysis
 
-Tech Stack:
+## Architecture
+
+Log File
+    ↓
+Parser
+    ↓
+Analysis Engine
+    ↓
+Verification Layer
+    ↓
+Final Report
+
+## Technologies
+
 - Python
-- OpenAI/Claude APIs
+- AI/LLM Workflows
 - JSON
+- Prompt Engineering
+
+## Sample Output
+
+Issue: Synchronization Failure
+
+Root Cause:
+Inventory mismatch detected
+
+Severity:
+Medium
+
+Recommended Action:
+Verify controller mapping and trigger inventory synchronization.
